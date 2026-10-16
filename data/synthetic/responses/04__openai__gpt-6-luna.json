@@ -1,0 +1,15 @@
+{
+  "case_id": "04",
+  "model": "openai/gpt-6-luna",
+  "returned_model": "openai/gpt-6-luna",
+  "provider": "OpenAI",
+  "seconds": 5.749,
+  "content": "{\"tipo\":\"factura\",\"factura\":{\"emisor\":\"SERVICIOS DEMO S.A.\",\"ruc_emisor\":\"80012345-6\",\"timbrado\":\"18456789\",\"numero\":\"001-003-0000042\",\"fecha_emision\":\"2026-10-15\",\"vencimiento\":\"2026-11-14\",\"condicion\":\"Crédito\",\"receptor\":\"CLIENTE FICTICIO S.A.\",\"ruc_receptor\":\"80076543-2\",\"moneda\":\"USD\",\"tipo_cambio\":\"6.454\",\"items\":[{\"descripcion\":\"Honorarios extraordinarios\",\"cantidad\":\"1\",\"precio_unitario\":\"22349.97\",\"iva_porcentaje\":10,\"importe\":\"22349.97\"}],\"total\":\"22349.97\"},\"medicion\":null}",
+  "finish_reason": "stop",
+  "cost_usd": "0.0005398",
+  "prompt_tokens": 2991,
+  "completion_tokens": 332,
+  "reasoning_tokens": 164,
+  "cached_tokens": 0,
+  "cache_write_tokens": 2988
+}

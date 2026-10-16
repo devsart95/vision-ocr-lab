@@ -1,0 +1,15 @@
+{
+  "case_id": "07",
+  "model": "openai/gpt-6-sol",
+  "returned_model": "openai/gpt-6-sol",
+  "provider": "OpenAI",
+  "seconds": 2.447,
+  "content": "{\"tipo\":\"medicion\",\"factura\":null,\"medicion\":{\"latitud\":\"-26.404839\",\"longitud\":\"-57.109026\",\"potencia_dbm\":\"-20.18\"}}",
+  "finish_reason": "stop",
+  "cost_usd": "0.005931",
+  "prompt_tokens": 2189,
+  "completion_tokens": 46,
+  "reasoning_tokens": 0,
+  "cached_tokens": 0,
+  "cache_write_tokens": 2186
+}
