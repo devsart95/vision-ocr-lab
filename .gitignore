@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.import_linter_cache/
+.env
+.env.*
+!.env.example
+*.local.*
+private/
+new-runs/
+.DS_Store
