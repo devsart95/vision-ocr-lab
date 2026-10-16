@@ -1,0 +1,15 @@
+{
+  "case_id": "07",
+  "model": "openai/gpt-6-luna",
+  "returned_model": "openai/gpt-6-luna",
+  "provider": "OpenAI",
+  "seconds": 2.953,
+  "content": "{\"tipo\":\"medicion\",\"factura\":null,\"medicion\":{\"latitud\":\"-26.404839\",\"longitud\":\"-57.109026\",\"potencia_dbm\":\"-20.18\"}}",
+  "finish_reason": "stop",
+  "cost_usd": "0.00033105",
+  "prompt_tokens": 2189,
+  "completion_tokens": 115,
+  "reasoning_tokens": 67,
+  "cached_tokens": 0,
+  "cache_write_tokens": 2186
+}

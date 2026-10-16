@@ -1,0 +1,37 @@
+[project]
+name = "vision-ocr-lab"
+version = "0.1.0"
+description = "A small, auditable lab for vision-based structured extraction."
+requires-python = ">=3.11"
+dependencies = ["matplotlib>=3.9", "pillow>=11", "pydantic>=2.10"]
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.11",
+    "pyright>=1.1",
+    "import-linter>=2",
+    "pip-audit>=2.9",
+    "vulture>=2.16",
+]
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[tool.hatch.build.targets.wheel]
+packages = ["src/ocr_lab"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "SIM", "RUF", "BLE", "T20", "S110", "ANN"]
+ignore = ["ANN401"]
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "strict"
+[tool.importlinter]
+root_package = "ocr_lab"
+[[tool.importlinter.contracts]]
+name = "Scoring domain stays independent of IO, models and plotting"
+type = "forbidden"
+source_modules = ["ocr_lab.domain"]
+forbidden_modules = ["ocr_lab.records", "ocr_lab.evaluation", "ocr_lab.charts", "ocr_lab.publication", "ocr_lab.runner"]

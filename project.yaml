@@ -1,0 +1,18 @@
+name: vision-ocr-lab
+magnitud: herramienta
+purpose: Public exploratory vision and structured-extraction lab
+owner: Sarto
+website: https://justino.dev
+stack: Python offline analysis and optional OpenRouter replay
+commands:
+  gate_tests: uv run pytest -q
+  gate_lint: uv run ruff check .
+  gate_types: uv run pyright
+  gate_dead_code: uv run vulture src --min-confidence 80
+  gate_layers: uv run lint-imports
+  gate_publication: uv run python -m ocr_lab verify
+  report: uv run python -m ocr_lab analyze
+external_services:
+  - name: OpenRouter
+    credential: OPENROUTER_API_KEY environment variable only
+    usage: Optional paid replay; offline commands never call the network

@@ -1,0 +1,15 @@
+{
+  "case_id": "10",
+  "model": "google/gemini-3.8-flash",
+  "returned_model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "seconds": 3.021,
+  "content": "{\"tipo\":\"medicion\",\"factura\":null,\"medicion\":{\"latitud\":null,\"longitud\":null,\"potencia_dbm\":null}}",
+  "finish_reason": "stop",
+  "cost_usd": "0.0011805",
+  "prompt_tokens": 1414,
+  "completion_tokens": 32,
+  "reasoning_tokens": 0,
+  "cached_tokens": 0,
+  "cache_write_tokens": 0
+}

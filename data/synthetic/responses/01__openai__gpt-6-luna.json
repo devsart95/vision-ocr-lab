@@ -1,0 +1,15 @@
+{
+  "case_id": "01",
+  "model": "openai/gpt-6-luna",
+  "returned_model": "openai/gpt-6-luna",
+  "provider": "OpenAI",
+  "seconds": 6.714,
+  "content": "{\"tipo\":\"factura\",\"factura\":{\"emisor\":\"SERVICIOS DEMO S.A.\",\"ruc_emisor\":\"80012345-6\",\"timbrado\":\"18456789\",\"numero\":\"001-003-0000042\",\"fecha_emision\":\"2026-10-15\",\"vencimiento\":\"2026-11-14\",\"condicion\":\"Crédito\",\"receptor\":\"CLIENTE FICTICIO S.A.\",\"ruc_receptor\":\"80076543-2\",\"moneda\":\"PYG\",\"tipo_cambio\":null,\"items\":[{\"descripcion\":\"Cable UTP por metro\",\"cantidad\":\"12.5\",\"precio_unitario\":\"8000\",\"iva_porcentaje\":10,\"importe\":\"100000\"},{\"descripcion\":\"Producto tasa reducida\",\"cantidad\":\"2\",\"precio_unitario\":\"52500\",\"iva_porcentaje\":5,\"importe\":\"105000\"},{\"descripcion\":\"Servicio exento\",\"cantidad\":\"1\",\"precio_unitario\":\"30000\",\"iva_porcentaje\":0,\"importe\":\"30000\"}],\"total\":\"235000\"},\"medicion\":null}",
+  "finish_reason": "stop",
+  "cost_usd": "0.0005263",
+  "prompt_tokens": 2991,
+  "completion_tokens": 305,
+  "reasoning_tokens": 84,
+  "cached_tokens": 0,
+  "cache_write_tokens": 2988
+}
