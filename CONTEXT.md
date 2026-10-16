@@ -23,4 +23,4 @@ README and docs/REPRODUCIBILITY.md contain commands. Offline artifacts and plots
 
 ## Publication status
 
-Initial repository created publicly. Implementation is tracked in issue 1 and its publication PR. Verify the remote and branch before updating this status.
+Published publicly on main. Implementation merged through PR 2; issue 1 is closed. Offline tests, type/lint/dependency boundaries, artifact verification and secret scans passed. Historical primary measurements are unchanged.
