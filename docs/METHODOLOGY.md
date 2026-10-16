@@ -42,7 +42,7 @@ The evaluator recursively flattens expected and returned JSON objects and compar
 
 `6.454` and `6454` are different numbers under the requested normalized schema. A thousands-separator error therefore counts as a data error even when the visible glyphs were recognized. Positive signs and trailing zeros do not change numeric meaning. Identifiers are not repaired by removing spaces.
 
-Whole-image exact match requires every expected leaf to match and no extra leaf. “Ready” additionally requires direct JSON and the implemented numeric/identifier string checks. These checks are deliberately narrower than a complete JSON Schema validator; the published suite has no readiness-only failures. The evaluator does not validate accounting compliance, taxpayer identity, physical meter calibration, or business correctness of the source document.
+Whole-image exact match requires every expected leaf to match, no extra leaf, and matching container types, object keys and array lengths (including empty containers). “Ready” additionally requires direct JSON and the implemented numeric/identifier string checks. These checks are deliberately narrower than a complete JSON Schema validator; the published suite has no readiness-only failures. The evaluator does not validate accounting compliance, taxpayer identity, physical meter calibration, or business correctness of the source document.
 
 There are 154 scored leaves per endpoint, including routing fields, expected nulls and repeated values. Field accuracy is descriptive and can look high despite a consequential amount error. It is not character error rate, word error rate, or an independent-sample accuracy estimate.
 
@@ -63,3 +63,7 @@ It applies only to this image/prompt/output mix. It excludes customer review, in
 The offline commands validate hashes, a complete unique matrix, Pydantic artifact schemas, stop reasons, the total recorded budget and public-content rules. Unit cases distinguish a correct decimal from a separator error, dropped signs, altered IDs, unknown values and fenced JSON.
 
 The publication export omits full provider envelopes, encrypted reasoning, response IDs and private pilots' images/extractions. No paid requests were made while assembling this repository. Replays are opt-in and write new files outside the historical dataset.
+
+## Post-publication scoring audit
+
+A follow-up audit found that leaf flattening alone could accept a list replaced by an indexed object, or extra empty objects/array elements. The evaluator now rejects these structural differences before granting exact/ready status. Regression cases failed before the correction and pass afterward. None of the archived primary responses contains these mismatches; the published scores, costs and ranking are unchanged. This remains a limited extraction evaluator rather than a complete JSON Schema validator.
