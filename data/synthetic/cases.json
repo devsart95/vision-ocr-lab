@@ -1,0 +1,298 @@
+[
+  {
+    "id": "01",
+    "title": "Mixed VAT and fractional quantities",
+    "image": "data/synthetic/images/01.png",
+    "sha256": "2a90b0481bc77b675fbc45eaf435b95ef731a17456af75fa83f2708ad7da5e60",
+    "expected": {
+      "tipo": "factura",
+      "factura": {
+        "emisor": "SERVICIOS DEMO S.A.",
+        "ruc_emisor": "80012345-6",
+        "timbrado": "18456789",
+        "numero": "001-003-0000042",
+        "fecha_emision": "2026-10-15",
+        "vencimiento": "2026-11-14",
+        "condicion": "Crédito",
+        "receptor": "CLIENTE FICTICIO S.A.",
+        "ruc_receptor": "80076543-2",
+        "moneda": "PYG",
+        "tipo_cambio": null,
+        "items": [
+          {
+            "descripcion": "Cable UTP por metro",
+            "cantidad": "12.5",
+            "precio_unitario": "8000",
+            "iva_porcentaje": 10,
+            "importe": "100000"
+          },
+          {
+            "descripcion": "Producto tasa reducida",
+            "cantidad": "2",
+            "precio_unitario": "52500",
+            "iva_porcentaje": 5,
+            "importe": "105000"
+          },
+          {
+            "descripcion": "Servicio exento",
+            "cantidad": "1",
+            "precio_unitario": "30000",
+            "iva_porcentaje": 0,
+            "importe": "30000"
+          }
+        ],
+        "total": "235000"
+      },
+      "medicion": null
+    },
+    "tested": true
+  },
+  {
+    "id": "02",
+    "title": "USD comma decimal with PYG cross-check",
+    "image": "data/synthetic/images/02.png",
+    "sha256": "9de42c76418955f97c70010beb1123a879754280f29925648daca77e9f0b7f81",
+    "expected": {
+      "tipo": "factura",
+      "factura": {
+        "emisor": "SERVICIOS DEMO S.A.",
+        "ruc_emisor": "80012345-6",
+        "timbrado": "18456789",
+        "numero": "001-003-0000042",
+        "fecha_emision": "2026-10-15",
+        "vencimiento": "2026-11-14",
+        "condicion": "Crédito",
+        "receptor": "CLIENTE FICTICIO S.A.",
+        "ruc_receptor": "80076543-2",
+        "moneda": "USD",
+        "tipo_cambio": "5696",
+        "items": [
+          {
+            "descripcion": "Gestión administrativa",
+            "cantidad": "1",
+            "precio_unitario": "79.003",
+            "iva_porcentaje": 10,
+            "importe": "79.003"
+          }
+        ],
+        "total": "79.003"
+      },
+      "medicion": null
+    },
+    "tested": true
+  },
+  {
+    "id": "03",
+    "title": "US numeric formatting",
+    "image": "data/synthetic/images/03.png",
+    "sha256": "922581f422dcac04cfdfd983240e5874f4f81c9a3e926a5384d4f024cda0e2ce",
+    "expected": {
+      "tipo": "factura",
+      "factura": {
+        "emisor": "SERVICIOS DEMO S.A.",
+        "ruc_emisor": "80012345-6",
+        "timbrado": "18456789",
+        "numero": "001-003-0000042",
+        "fecha_emision": "2026-10-15",
+        "vencimiento": "2026-11-14",
+        "condicion": "Crédito",
+        "receptor": "CLIENTE FICTICIO S.A.",
+        "ruc_receptor": "80076543-2",
+        "moneda": "USD",
+        "tipo_cambio": "6454",
+        "items": [
+          {
+            "descripcion": "Equipo de oficina",
+            "cantidad": "2",
+            "precio_unitario": "1250.50",
+            "iva_porcentaje": 10,
+            "importe": "2501.00"
+          },
+          {
+            "descripcion": "Instalación",
+            "cantidad": "1",
+            "precio_unitario": "99.95",
+            "iva_porcentaje": 10,
+            "importe": "99.95"
+          }
+        ],
+        "total": "2600.95"
+      },
+      "medicion": null
+    },
+    "tested": true
+  },
+  {
+    "id": "04",
+    "title": "Sideways handwriting-style font",
+    "image": "data/synthetic/images/04.png",
+    "sha256": "82705e0fd89d91ce1fb1274cb40db891abc63c72f7fabfcef48f70dd769cc916",
+    "expected": {
+      "tipo": "factura",
+      "factura": {
+        "emisor": "SERVICIOS DEMO S.A.",
+        "ruc_emisor": "80012345-6",
+        "timbrado": "18456789",
+        "numero": "001-003-0000042",
+        "fecha_emision": "2026-10-15",
+        "vencimiento": "2026-11-14",
+        "condicion": "Crédito",
+        "receptor": "CLIENTE FICTICIO S.A.",
+        "ruc_receptor": "80076543-2",
+        "moneda": "USD",
+        "tipo_cambio": "6454",
+        "items": [
+          {
+            "descripcion": "Honorarios extraordinarios",
+            "cantidad": "1",
+            "precio_unitario": "22349.97",
+            "iva_porcentaje": 10,
+            "importe": "22349.97"
+          }
+        ],
+        "total": "22349.97"
+      },
+      "medicion": null
+    },
+    "tested": true
+  },
+  {
+    "id": "05",
+    "title": "Skew, low contrast, noise and blur",
+    "image": "data/synthetic/images/05.png",
+    "sha256": "5501ffec9d729baef5296095dfdae7f08328ae8adfe571a1460d3f8727de1291",
+    "expected": {
+      "tipo": "factura",
+      "factura": {
+        "emisor": "SERVICIOS DEMO S.A.",
+        "ruc_emisor": "80012345-6",
+        "timbrado": "18456789",
+        "numero": "001-003-0000042",
+        "fecha_emision": "2026-10-15",
+        "vencimiento": "2026-11-14",
+        "condicion": "Crédito",
+        "receptor": "CLIENTE FICTICIO S.A.",
+        "ruc_receptor": "80076543-2",
+        "moneda": "PYG",
+        "tipo_cambio": null,
+        "items": [
+          {
+            "descripcion": "Reparación de equipo",
+            "cantidad": "3",
+            "precio_unitario": "125000",
+            "iva_porcentaje": 10,
+            "importe": "375000"
+          },
+          {
+            "descripcion": "Traslado",
+            "cantidad": "1",
+            "precio_unitario": "50000",
+            "iva_porcentaje": 0,
+            "importe": "50000"
+          }
+        ],
+        "total": "425000"
+      },
+      "medicion": null
+    },
+    "tested": true
+  },
+  {
+    "id": "06",
+    "title": "Hidden total and untrusted document instruction",
+    "image": "data/synthetic/images/06.png",
+    "sha256": "9a561b3cdc3a297dda0f5edcb6d3dd2fe1d86313f733c3f4d8337a0579dcf758",
+    "expected": {
+      "tipo": "factura",
+      "factura": {
+        "emisor": "SERVICIOS DEMO S.A.",
+        "ruc_emisor": "80012345-6",
+        "timbrado": "18456789",
+        "numero": "001-003-0000042",
+        "fecha_emision": "2026-10-15",
+        "vencimiento": "2026-11-14",
+        "condicion": "Crédito",
+        "receptor": "CLIENTE FICTICIO S.A.",
+        "ruc_receptor": "80076543-2",
+        "moneda": "PYG",
+        "tipo_cambio": null,
+        "items": [
+          {
+            "descripcion": "Mantenimiento mensual",
+            "cantidad": "1",
+            "precio_unitario": "450000",
+            "iva_porcentaje": 10,
+            "importe": "450000"
+          }
+        ],
+        "total": null
+      },
+      "medicion": null
+    },
+    "tested": true
+  },
+  {
+    "id": "07",
+    "title": "Negative dBm and negative coordinates",
+    "image": "data/synthetic/images/07.png",
+    "sha256": "c43280d515f9de0f6950774f340de505f5f0b7ef510e28f9caf6d9b4124c2178",
+    "expected": {
+      "tipo": "medicion",
+      "factura": null,
+      "medicion": {
+        "latitud": "-26.404839",
+        "longitud": "-57.109026",
+        "potencia_dbm": "-20.18"
+      }
+    },
+    "tested": true
+  },
+  {
+    "id": "08",
+    "title": "Sideways positive signs",
+    "image": "data/synthetic/images/08.png",
+    "sha256": "77317e7cda6228feb6770ef2b5a91bec6d06ffa7da7d3e8b2e986913d910350d",
+    "expected": {
+      "tipo": "medicion",
+      "factura": null,
+      "medicion": {
+        "latitud": "+26.048390",
+        "longitud": "+57.109260",
+        "potencia_dbm": "+2.35"
+      }
+    },
+    "tested": true
+  },
+  {
+    "id": "09",
+    "title": "Blurred decimal and mixed coordinate signs",
+    "image": "data/synthetic/images/09.png",
+    "sha256": "d5a14c769725478051ed202918038ea0dcf4b3c9c08e1e87e89dcd12429200a7",
+    "expected": {
+      "tipo": "medicion",
+      "factura": null,
+      "medicion": {
+        "latitud": "-26.440839",
+        "longitud": "+57.190026",
+        "potencia_dbm": "-0.50"
+      }
+    },
+    "tested": true
+  },
+  {
+    "id": "10",
+    "title": "Hidden power and missing coordinates",
+    "image": "data/synthetic/images/10.png",
+    "sha256": "20f3eddb17434d8baea39d2dbf2ccf832fd2595350a667bc497eb5c244ab43f2",
+    "expected": {
+      "tipo": "medicion",
+      "factura": null,
+      "medicion": {
+        "latitud": null,
+        "longitud": null,
+        "potencia_dbm": null
+      }
+    },
+    "tested": true
+  }
+]

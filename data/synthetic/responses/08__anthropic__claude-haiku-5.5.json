@@ -1,0 +1,15 @@
+{
+  "case_id": "08",
+  "model": "anthropic/claude-haiku-5.5",
+  "returned_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "seconds": 5.788,
+  "content": "{\"tipo\":\"medicion\",\"factura\":null,\"medicion\":{\"latitud\":\"+26.048390\",\"longitud\":\"+57.109260\",\"potencia_dbm\":\"+2.35\"}}",
+  "finish_reason": "stop",
+  "cost_usd": "0.0004107",
+  "prompt_tokens": 2587,
+  "completion_tokens": 304,
+  "reasoning_tokens": 241,
+  "cached_tokens": 0,
+  "cache_write_tokens": 0
+}

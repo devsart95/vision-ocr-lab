@@ -1,0 +1,34 @@
+{
+  "id": "02",
+  "image": "02.png",
+  "sha256": "13aaba8222369b61d26a21bc200c542ecd25d0ec2e7ea263aa24de1a68d36e55",
+  "expected": {
+    "tipo": "factura",
+    "factura": {
+      "emisor": "SERVICIOS DEMO S.A.",
+      "ruc_emisor": "80012345-6",
+      "timbrado": "18456789",
+      "numero": "001-003-0000042",
+      "fecha_emision": "2026-10-15",
+      "vencimiento": "2026-11-14",
+      "condicion": "Crédito",
+      "receptor": "CLIENTE FICTICIO S.A.",
+      "ruc_receptor": "80076543-2",
+      "moneda": "USD",
+      "tipo_cambio": "5696",
+      "items": [
+        {
+          "descripcion": "Gestión administrativa",
+          "cantidad": "1",
+          "precio_unitario": "79.003",
+          "iva_porcentaje": 10,
+          "importe": "79.003"
+        }
+      ],
+      "total": "79.003"
+    },
+    "medicion": null
+  },
+  "included_in_primary_results": false,
+  "reason": "Original stimulus did not independently disambiguate 79,003 USD; replaced with a PYG cross-check and rerun for every model."
+}

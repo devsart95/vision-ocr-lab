@@ -1,0 +1,244 @@
+[
+  {
+    "task": "Printed electronic invoice",
+    "scope": "Unscored public appendix: private image and extraction omitted. Human-assisted reference; not independently adjudicated. Not comparable with the synthetic suite.",
+    "measurements": [
+      {
+        "model": "openai/gpt-6-luna",
+        "seconds": 10.231,
+        "cost_usd": "0.0007473",
+        "observed_correct_fields": 31,
+        "reference_field_count": 31,
+        "json_direct": true
+      },
+      {
+        "model": "deepseek/deepseek-v4.1-flash",
+        "seconds": 4.018,
+        "cost_usd": "0.000880425",
+        "observed_correct_fields": 30,
+        "reference_field_count": 31,
+        "json_direct": true
+      },
+      {
+        "model": "anthropic/claude-haiku-5.5",
+        "seconds": 13.323,
+        "cost_usd": "0.0013252",
+        "observed_correct_fields": 31,
+        "reference_field_count": 31,
+        "json_direct": true
+      },
+      {
+        "model": "openai/gpt-5.6-luna",
+        "seconds": 8.09,
+        "cost_usd": "0.001466",
+        "observed_correct_fields": 31,
+        "reference_field_count": 31,
+        "json_direct": true
+      },
+      {
+        "model": "qwen/qwen3.8-flash",
+        "seconds": 30.452,
+        "cost_usd": "0.00167195",
+        "observed_correct_fields": 31,
+        "reference_field_count": 31,
+        "json_direct": true
+      },
+      {
+        "model": "google/gemini-3.8-flash",
+        "seconds": 6.537,
+        "cost_usd": "0.0029085",
+        "observed_correct_fields": 31,
+        "reference_field_count": 31,
+        "json_direct": true
+      },
+      {
+        "model": "deepseek/deepseek-v4.1-flash",
+        "seconds": 19.163,
+        "cost_usd": "0.003996675",
+        "observed_correct_fields": null,
+        "reference_field_count": null,
+        "json_direct": false
+      },
+      {
+        "model": "openai/gpt-4o",
+        "seconds": 4.141,
+        "cost_usd": "0.0079",
+        "observed_correct_fields": 31,
+        "reference_field_count": 31,
+        "json_direct": true
+      },
+      {
+        "model": "openai/gpt-6-sol",
+        "seconds": 8.356,
+        "cost_usd": "0.011916",
+        "observed_correct_fields": 31,
+        "reference_field_count": 31,
+        "json_direct": true
+      },
+      {
+        "model": "openai/gpt-5.6-terra",
+        "seconds": 9.329,
+        "cost_usd": "0.015308",
+        "observed_correct_fields": 31,
+        "reference_field_count": 31,
+        "json_direct": true
+      }
+    ]
+  },
+  {
+    "task": "Optical meter photograph",
+    "scope": "Unscored public appendix: private image and extraction omitted. Human-assisted reference; not independently adjudicated. Not comparable with the synthetic suite.",
+    "measurements": [
+      {
+        "model": "deepseek/deepseek-v4.1-flash",
+        "seconds": 3.162,
+        "cost_usd": "0.0001558",
+        "observed_correct_fields": 3,
+        "reference_field_count": 3,
+        "json_direct": false
+      },
+      {
+        "model": "anthropic/claude-haiku-5.5",
+        "seconds": 3.734,
+        "cost_usd": "0.0002008",
+        "observed_correct_fields": 3,
+        "reference_field_count": 3,
+        "json_direct": false
+      },
+      {
+        "model": "openai/gpt-6-luna",
+        "seconds": 6.383,
+        "cost_usd": "0.0002098",
+        "observed_correct_fields": 3,
+        "reference_field_count": 3,
+        "json_direct": true
+      },
+      {
+        "model": "qwen/qwen3.8-flash",
+        "seconds": 12.343,
+        "cost_usd": "0.00032477",
+        "observed_correct_fields": 3,
+        "reference_field_count": 3,
+        "json_direct": true
+      },
+      {
+        "model": "openai/gpt-5.6-luna",
+        "seconds": 6.934,
+        "cost_usd": "0.0004946",
+        "observed_correct_fields": 2,
+        "reference_field_count": 3,
+        "json_direct": true
+      },
+      {
+        "model": "google/gemini-3.8-flash",
+        "seconds": 6.681,
+        "cost_usd": "0.0014895",
+        "observed_correct_fields": 3,
+        "reference_field_count": 3,
+        "json_direct": false
+      },
+      {
+        "model": "openai/gpt-4o",
+        "seconds": 6.321,
+        "cost_usd": "0.00258",
+        "observed_correct_fields": 3,
+        "reference_field_count": 3,
+        "json_direct": false
+      },
+      {
+        "model": "openai/gpt-6-sol",
+        "seconds": 6.326,
+        "cost_usd": "0.004596",
+        "observed_correct_fields": 3,
+        "reference_field_count": 3,
+        "json_direct": true
+      },
+      {
+        "model": "openai/gpt-5.6-terra",
+        "seconds": 6.421,
+        "cost_usd": "0.004718",
+        "observed_correct_fields": 3,
+        "reference_field_count": 3,
+        "json_direct": true
+      }
+    ]
+  },
+  {
+    "task": "Handwritten invoice photograph",
+    "scope": "Unscored public appendix: private image and extraction omitted. Human-assisted reference; not independently adjudicated. Not comparable with the synthetic suite.",
+    "measurements": [
+      {
+        "model": "openai/gpt-6-luna",
+        "seconds": 19.34,
+        "cost_usd": "0.0009633",
+        "observed_correct_fields": 11,
+        "reference_field_count": 13,
+        "json_direct": true
+      },
+      {
+        "model": "deepseek/deepseek-v4.1-flash",
+        "seconds": 8.2,
+        "cost_usd": "0.001228275",
+        "observed_correct_fields": 5,
+        "reference_field_count": 13,
+        "json_direct": false
+      },
+      {
+        "model": "openai/gpt-5.6-luna",
+        "seconds": 13.776,
+        "cost_usd": "0.0018034",
+        "observed_correct_fields": 7,
+        "reference_field_count": 13,
+        "json_direct": true
+      },
+      {
+        "model": "qwen/qwen3.8-flash",
+        "seconds": 45.525,
+        "cost_usd": "0.00184711",
+        "observed_correct_fields": 9,
+        "reference_field_count": 13,
+        "json_direct": true
+      },
+      {
+        "model": "anthropic/claude-haiku-5.5",
+        "seconds": 25.839,
+        "cost_usd": "0.0024057",
+        "observed_correct_fields": 12,
+        "reference_field_count": 13,
+        "json_direct": true
+      },
+      {
+        "model": "google/gemini-3.8-flash",
+        "seconds": 11.263,
+        "cost_usd": "0.002541",
+        "observed_correct_fields": 12,
+        "reference_field_count": 13,
+        "json_direct": true
+      },
+      {
+        "model": "openai/gpt-4o",
+        "seconds": 14.019,
+        "cost_usd": "0.0078775",
+        "observed_correct_fields": 5,
+        "reference_field_count": 13,
+        "json_direct": true
+      },
+      {
+        "model": "openai/gpt-6-sol",
+        "seconds": 18.098,
+        "cost_usd": "0.015576",
+        "observed_correct_fields": 12,
+        "reference_field_count": 13,
+        "json_direct": true
+      },
+      {
+        "model": "openai/gpt-5.6-terra",
+        "seconds": 14.189,
+        "cost_usd": "0.018982",
+        "observed_correct_fields": 9,
+        "reference_field_count": 13,
+        "json_direct": true
+      }
+    ]
+  }
+]
