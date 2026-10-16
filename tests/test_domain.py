@@ -1,6 +1,6 @@
 import pytest
 
-from ocr_lab.domain import JSON, MISSING, compare_field, parse_response
+from ocr_lab.domain import JSON, MISSING, compare_field, evaluate, parse_response
 
 
 @pytest.mark.parametrize(
@@ -33,3 +33,18 @@ def test_array_is_not_an_extraction_object() -> None:
     data, direct = parse_response("[1, 2]")
     assert data == {}
     assert direct is False
+
+
+@pytest.mark.parametrize(
+    "content",
+    [
+        '{"items":{"0":{"total":"1"}}}',
+        '{"items":[{"total":"1"}],"extra":{}}',
+        '{"items":[{"total":"1"},{}]}',
+    ],
+)
+def test_container_changes_fail_exact_match(content: str) -> None:
+    expected: dict[str, JSON] = {"items": [{"total": "1"}]}
+    result = evaluate(expected, content)
+    assert result["exact"] is False
+    assert result["ready"] is False
