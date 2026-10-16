@@ -74,8 +74,27 @@ def flatten(value: JSON, prefix: str = "") -> dict[str, JSON]:
     return {prefix: value}
 
 
+def same_structure(expected: JSON, actual: JSON) -> bool:
+    if isinstance(expected, dict):
+        return (
+            isinstance(actual, dict)
+            and expected.keys() == actual.keys()
+            and all(same_structure(value, actual[key]) for key, value in expected.items())
+        )
+    if isinstance(expected, list):
+        return (
+            isinstance(actual, list)
+            and len(expected) == len(actual)
+            and all(
+                same_structure(left, right) for left, right in zip(expected, actual, strict=True)
+            )
+        )
+    return not isinstance(actual, (dict, list))
+
+
 def evaluate(expected: dict[str, JSON], content: str) -> dict[str, JSON]:
     parsed, direct = parse_response(content)
+    structure_valid = same_structure(expected, parsed)
     reference, actual = flatten(expected), flatten(parsed)
     errors: list[JSON] = [
         {"field": key, "expected": val, "actual": actual.get(key, MISSING)}
@@ -102,8 +121,8 @@ def evaluate(expected: dict[str, JSON], content: str) -> dict[str, JSON]:
     return {
         "correct_fields": len(reference) - len(errors),
         "total_fields": len(reference),
-        "exact": not errors and not extras,
-        "ready": not errors and not extras and not formats and direct,
+        "exact": structure_valid and not errors and not extras,
+        "ready": structure_valid and not errors and not extras and not formats and direct,
         "direct_json": direct,
         "errors": errors,
         "extra_fields": extras,

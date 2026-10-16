@@ -24,3 +24,7 @@ README and docs/REPRODUCIBILITY.md contain commands. Offline artifacts and plots
 ## Publication status
 
 Published publicly on main. Implementation merged through PR 2; issue 1 is closed. Offline tests, type/lint/dependency boundaries, artifact verification and secret scans passed. Historical primary measurements are unchanged.
+
+## Follow-up audit
+
+Recomputed costs and checked archived response container structures independently. Fixed a flattening false positive: exact/ready now reject changed container types and extra empty containers. No historical response was affected; primary scores and charts are unchanged. Regression evidence and scope are tracked in issue 3. No paid API calls were made.
